@@ -17,15 +17,17 @@ class Rectangle {
   height = 0;
   width;
   constructor(height, width) {
-	this.height = height;  // this is required to distinguish between the field and the local
+	this.height = height;  // this. is required to distinguish between the field and the local
 	this.width = width;
   }
 
   area() {
-	return width * height;  // AddThis will allow this to refer to class fields
+	return width * height;  // AddThis can automatically supply the this. to refer to class fields
   }	
 }
 ```
+
+AddThis can be run with -r to reverse the process turning normal JavaScript into this dialect.  This can help reduce cognitive load when reading JavaScript to understand what it is doing.  Even if you are not programming in this dialect, it may be of use to people who want a simpler view of the code.
 
 
 There are instances where technically legal JavaScript would conflict with this translation. Specifically when a class has a field with the same name as a global and the code distinguishes between the field and the global by the use of `this.`.  If you use this tool, don't write JavaScript like that.  If you choose not to use this tool, also don't write JavaScript like that.
