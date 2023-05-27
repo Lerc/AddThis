@@ -1,0 +1,30 @@
+{
+  "name": "addthis",
+  "version": "1.0.0",
+  "description": "A CLI tool to add or remove 'this.' from class properties in JavaScript code, considering context code containing parent classes.",
+  "main": "addthis.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Lerc/addthis.git"
+  },
+  "keywords": [
+    "javascript",
+    "this",
+    "babel",
+    "CLI",
+    "transformer"
+  ],
+  "author": "Lerc",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/parser": "^7.17.5",
+    "@babel/generator": "^7.17.5",
+    "@babel/traverse": "^7.17.5",
+    "@babel/types": "^7.17.5",
+    "commander": "^8.3.5"
+  }
+}
