@@ -6,14 +6,17 @@ A CLI tool to add or remove 'this.' from class properties in JavaScript code, co
 
 Clone the repository and run `npm install` to install the dependencies.
 
+````
 git clone https://github.com/Lerc/addthis.git
 cd addthis
 npm install
+````
 
 ## Usage
 
+````
 node addthis.js [options]
-
+````
 
 ### Options:
 
